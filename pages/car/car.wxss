@@ -1,0 +1,74 @@
+.cell{
+    display: flex;
+    flex-direction: column;
+    padding-left: 16rpx;
+    background-color: white;
+    margin-bottom: 18rpx;
+}
+.view-first{
+    display: flex;
+    padding:  10rpx 0;
+    align-items: center;
+}
+.shopname{
+    font-size: 24rpx;
+}
+.line{
+    height: 2rpx;
+    background-color: lightblue;
+}
+scroll-view{
+    background-color: #E7E7E7;
+    height: 100%;
+}
+.radio{
+  font-size: 20rpx;
+  transform: scale(0.8);
+}
+.good-item{
+    display: flex;
+    align-items: center;
+    padding: 20rpx 0;
+}
+.good-img{
+    width: 120rpx;
+    height: 120rpx;
+}
+.right{
+    margin-left: 10rpx;
+    flex: auto;
+    padding-right: 20rpx;
+}
+.good-title{
+    font-size: 30rpx;
+}
+.money-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.num-box{
+    display: flex;
+    align-items: center;
+    border: 2rpx solid red;
+    border-radius: 8rpx;
+    /*transform: scale(0.8);*/
+}
+.num-input{
+    width: 50rpx;
+    text-align: center;
+    height: 20rpx;
+    font-size: 25rpx;
+    border-left: 2rpx solid red;
+    border-right: 2rpx solid red;
+}
+.mul,.add{
+    padding: 0 10rpx;
+    font-weight: bold;
+    width: 30rpx;
+    text-align: center;
+}
+
+.money-value{
+    font-size: 32rpx;
+}

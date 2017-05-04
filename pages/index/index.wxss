@@ -1,0 +1,229 @@
+/**index.wxss**/
+.search-bar{
+  background-color: #c81724;
+  height: 240rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input{
+  background-color: white;
+  border-radius: 26rpx;
+  width: 86%;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  display: flex;
+  /*justify-content: center;*/
+  height: 60rpx;
+}
+.input-placeholder{
+  text-align: center;
+  font-size: 15px;  
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 30rpx 20rpx;
+  margin: 0;
+  background-color: white;
+}
+.menu-item{
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-img{
+  width: 60rpx;
+  height: 60rpx;
+}
+.menu-text{
+  margin-top: 14rpx;
+  font-size: 12px;
+}
+.scrollbody{
+  background-color: lightgray;
+}
+
+.miaosha{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  margin-top: 20rpx;
+  padding-top: 20rpx;
+  align-items: center;
+}
+.miaosha-title{
+  font-size: 30rpx;
+}
+.time-list,
+.text-list{
+  margin-top: 15rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.text-list{
+   margin-top: 2rpx;
+   
+}
+.miaosha-time{
+  background-color: #EFEFEF;
+  text-align: center;
+  font-size: 32rpx;
+  padding: 12rpx 20rpx;
+  border-radius: 30rpx;
+}
+.time-line{
+  width: 20rpx;
+  height: 2rpx;
+  background-color: lightgray;
+}
+.time-none{
+  width: 14rpx;
+  height: 1rpx;
+}
+.list-item{
+  flex-direction: column;
+  display: flex;
+}
+.miaosha-text{
+  padding: 12rpx 20rpx;
+  font-size: 23rpx;
+  text-align: center;
+  width: 90rpx;
+  font-weight: 600;
+}
+.time-active{
+  background-color: #FF6666;
+  color: white;
+}
+.text-active{
+  color: #FF6666;
+}
+#over-time{
+  margin-top: 15rpx;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.over-title{
+  font-size: 30rpx;
+  text-align: center;
+  margin-bottom: 4rpx;
+}
+.over-subtime{
+  text-align: center;
+}
+.subtime-black{
+  background-color: black;
+  color: white;
+  padding: 5rpx 6rpx;
+  border-radius: 3rpx;
+  font-size: 34rpx;
+}
+.subtime-left{
+  margin-left: 4rpx;
+}
+#goodlist{
+  background-color: white;
+  padding: 20rpx 40rpx;
+}
+.good-cell{
+  margin-top: 26rpx;
+  background-color: white;
+  box-shadow: 0 0 15rpx 10rpx #F2F2F2;
+  border-radius: 6rpx;
+  display: flex;
+  padding:  2rpx 15rpx;
+  align-items: center;
+  height: 270rpx;
+}
+.cell-img{
+  width: 230rpx;
+  height: 250rpx;
+}
+.cell-right{
+  display: flex;
+  flex-direction: column;
+  margin-left: 16rpx;
+  flex-shrink: 2;
+  align-items: stretch;
+}
+.cell-title{
+  display: flex;
+  font-size: 30rpx;
+  max-height: 86rpx;
+  overflow: hidden;
+  padding: 3rpx 0;
+  flex-shrink: 2;
+  text-overflow: ellipsis;
+}
+
+.cell-money{
+  margin: 9rpx 0;
+}
+.new-money{
+  font-size: 30rpx;
+  color: red;
+}
+.saled{
+  font-size: 30rpx;
+}
+.old-money{
+  color: gray;
+  font-size: 30rpx;
+  text-decoration: line-through;
+  margin-left: 10rpx;
+}
+.cell-sale{
+  display: flex;
+  flex-direction: row;
+}
+
+progress{
+  width: 130rpx;
+  margin-left: 22rpx;
+  border-radius: 6rpx;
+}
+.cell-btn{
+  background-color: #FF6666;
+  font-size: 26rpx;
+  width: 140rpx;
+  margin-top: 8rpx;
+  color: white;
+  text-align: center;
+  padding: 6rpx;
+  border-radius: 6rpx;
+}
+.home-title{
+  box-sizing: border-box;
+  color: white;
+  margin-bottom: 2rpx;
+  font-weight: bold;
+  font-size: 24px;
+}
+.home-x{
+  margin-bottom: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.x-text{
+  color: white;
+  font-size: 16px;
+}
+.point{
+  width: 8rpx;
+  height: 8rpx;
+  background-color: white;
+  border-radius: 4rpx;
+  margin: 0 12rpx;
+}

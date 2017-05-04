@@ -1,0 +1,97 @@
+<!--index.wxml-->
+ <scroll-view scroll-y="true" class="scrollbody" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}">
+    <view id="search-bar" class="search-bar">
+        <text class="home-title">JJ.COM 京京</text>
+        <view class="home-x">
+          <text class="x-text">多</text>
+          <view class="point"></view>
+          <text class="x-text">快</text>
+          <view class="point"></view>
+          <text class="x-text">好</text>
+          <view class="point"></view>
+          <text class="x-text">省</text>
+        </view>
+        <input type="text" confirm-type="search" 
+          class="input"  maxlength="20" 
+          placeholder="搜索商品" 
+          placeholder-class="input-placeholder"/>
+    </view>
+    <view class="menu">
+      <view class="menu-item">
+        <image class="menu-img" 
+         src="../../static/gift.png"></image>
+          <text class="menu-text">领优惠券</text>
+      </view>
+      <view class="menu-item">
+        <image class="menu-img" 
+         src="../../static/scancode.png"></image>
+         <text class="menu-text">扫码购物</text>
+      </view>
+      <view class="menu-item">
+        <image class="menu-img" 
+         src="../../static/delivery.png"></image>
+         <text class="menu-text">物流查询</text>
+      </view>
+      <view class="menu-item">
+        <image class="menu-img" 
+         src="../../static/menu.png"></image>
+         <text class="menu-text">商品分类</text>
+      </view>
+    </view>
+    <view id="miaosha" class="miaosha">
+        <text class="miaosha-title">京京秒杀</text>
+        <view class="time-list">
+          <text class="miaosha-time time-active">12:00</text>
+          <view class="time-line"></view>
+          <text class="miaosha-time">14:00</text>
+           <view class="time-line"></view>
+          <text class="miaosha-time">16:00</text>
+           <view class="time-line"></view>
+          <text class="miaosha-time">18:00</text>
+           <view class="time-line"></view>
+          <text class="miaosha-time">20:00</text>
+        </view>
+        <view class="text-list ">
+          <text class="miaosha-text text-active">抢购中</text>
+          <view class="time-none"></view>
+          <text class="miaosha-text">即将开始</text>
+           <view class="time-none"></view>
+          <text class="miaosha-text">即将开始</text>
+           <view class="time-none"></view>
+          <text class="miaosha-text">即将开始</text>
+           <view class="time-none"></view>
+          <text class="miaosha-text">即将开始</text>
+        </view>
+        <view id="over-time">
+          <text class="over-title">距本场结束</text>
+          <view class="over-time-list">
+            <text class="over-subtime subtime-black">0</text>
+            <text class="over-subtime subtime-black subtime-left">0</text>
+            <text class="over-subtime">:</text>
+            <text class="over-subtime subtime-black">0</text>
+            <text class="over-subtime subtime-black subtime-left">7</text>
+            <text class="over-subtime">:</text>
+            <text class="over-subtime subtime-black">0</text>
+            <text class="over-subtime subtime-black subtime-left">0</text>
+          </view>
+        </view>
+    </view>
+    <view id="goodlist">
+      <view class="good-cell" wx:for="{{goods}}" wx:key="item" wx:for-item="item">
+        <image class="cell-img" mode="aspectFill" 
+         src="../../static/{{item.img}}.jpg"></image>
+         <view class="cell-right">
+            <text class="cell-title">{{item.title}}</text>
+            <view class="cell-money">
+              <text class="new-money">￥79</text>
+              <text class="old-money">￥299.00</text>
+            </view>
+            <view class="cell-sale">
+              <text class="saled">已售 62%</text>
+              <progress percent="62" color="red" active="true"/>
+            </view>
+            <text class="cell-btn" size="mini" type="warn">立即抢购</text>
+         </view>
+      </view>
+    </view>
+  </scroll-view>

@@ -1,0 +1,26 @@
+<scroll-view>
+    <view class="cell" wx:for="{{goodlist}}"  wx:key="idx">
+        <view class="view-first">
+            <radio value="false" class="radio" color="red"/>
+            <text class="shopname">{{item.shopname}}</text>
+        </view>
+        <view class="line"></view>
+        <view class="good-item" wx:for="{{item.list}}" wx:for-item="subitem" wx:key="idx">
+            <label class="radio">
+                <radio value="false" checked="{{item.checked}}" color="red"/>
+            </label>
+            <image class="good-img" src="{{subitem.img}}"></image>
+            <view class="right">
+                <text class="good-title">{{subitem.title}}</text>
+                <view class="money-box">
+                    <text class="money-value">￥{{subitem.value}}</text>
+                    <view class="num-box">
+                        <text class="mul">-</text>
+                        <input type="number" class="num-input"/>
+                        <text class="add">+</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
